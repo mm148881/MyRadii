@@ -277,8 +277,21 @@ string RadiiDBase::mydata=
 "	C17	C4H2\n"
 "	C18	C4H3\n"
 "	C19	C4H2\n"
-"	C20	C4H3\n" ;
-
+"	C20	C4H3\n"
+"SOL\n"
+		"   OW OW\n"
+		"   O  OW\n"
+		"   HW1  H\n"
+		"   HW2  H\n"
+		"   H1  H\n"
+		"   H2  H\n"
+"HOH\n"
+		"   OW OW\n"
+		"   O  OW\n"
+		"   HW1  H\n"
+		"   HW2  H\n"
+		"   H1  H\n"
+		"   H2  H\n";
 
 
 #endif /* MOLECULESDBASE_HH_ */

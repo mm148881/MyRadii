@@ -9,6 +9,7 @@
 #include <iostream>
 #include "InputRadii.h"
 #include "RadiiDBase.h"
+#include "Myradius.h"
 using namespace std;
 
 int main() {
@@ -16,8 +17,10 @@ int main() {
 	string h;
 
 	InputRadii billo;
-	cout << billo;
 	RadiiDBase oppo;
-	oppo.testit("AO");
+	Topol_NS::Myradius oris(billo,oppo);
+//	oris.setNOHYD();
+
+	cout << Topol_NS::Myradius()("SOL","OW") << endl;
 	return 0;
 }

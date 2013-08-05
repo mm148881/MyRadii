@@ -25,6 +25,12 @@ class RadiiDBase {
 	static string mydata;
 public:
 	RadiiDBase();
+	RadiiDBase(istream &);
+	map<string,string> & operator[](const string);
+	RadiiDBase & operator=(RadiiDBase & y){
+		Map=y.Map;
+		return *this;
+	};
 	void ReplaceDataBase(istream & );
 	void AddToDataBase(istream & );
 	virtual ~RadiiDBase();

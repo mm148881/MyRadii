@@ -8,5 +8,8 @@
 #include "Myradius.h"
 
 namespace Topol_NS {
+InputRadii * Myradius::IR=NULL;
+RadiiDBase * Myradius::RDB=NULL;
+bool Myradius::init=false;
 bool Myradius::bHyd=true;
 }

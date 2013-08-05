@@ -13,6 +13,14 @@ RadiiDBase::RadiiDBase() {
 	istringstream ss(mydata);
 	ss>>*this;
 }
+RadiiDBase::RadiiDBase(istream & ss) {
+	Map.clear();
+	ss>>*this;
+}
+map<string,string> & RadiiDBase::operator[](const string Residue){
+	return Map[Residue];
+}
+
 
 RadiiDBase::~RadiiDBase() {
 	// TODO Auto-generated destructor stub
