@@ -35,6 +35,8 @@ public:
 	}
 	virtual ~InputRadii();
 	DualR & operator[](const string x){return R[x];};
+	int count(const string x){return R.count(x);}
+
 	friend ostream & operator<<(ostream & fout, InputRadii & y ){
 		map<string,DualR>::iterator it=y.R.begin();
 		for(;it!=y.R.end();it++){

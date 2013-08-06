@@ -48,11 +48,9 @@ public:
 		*RDB=y;
 		init=true;
 	};
-	double operator()(const string Residue, const string Atom){
-		string type=(*RDB)[Residue][Atom];
-		if(bHyd) return (*IR)[type].rh;
-		else return (*IR)[type].rnoh;
-	}
+
+	double operator()(const string, const string);
+
 	static void setNOHYD(){bHyd=false;};
 };
 }

@@ -18,7 +18,13 @@ RadiiDBase::RadiiDBase(istream & ss) {
 	ss>>*this;
 }
 map<string,string> & RadiiDBase::operator[](const string Residue){
-	return Map[Residue];
+	try{
+		if(Map.count(Residue) > 0) return Map[Residue];
+		else throw string(" Residue "+ Residue + " undefined. Abort");
+	}catch(const string & s){
+		cout << s <<endl;
+		exit(1);
+	}
 }
 
 

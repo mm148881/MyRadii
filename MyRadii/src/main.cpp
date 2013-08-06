@@ -21,6 +21,6 @@ int main() {
 	Topol_NS::Myradius oris(billo,oppo);
 //	oris.setNOHYD();
 
-	cout << Topol_NS::Myradius()("SOL","OW") << endl;
+	cout << Topol_NS::Myradius()("HOH","O") << endl;
 	return 0;
 }
